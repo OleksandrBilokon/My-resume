@@ -3,11 +3,11 @@ color:#333;
 font-family:Arial, Helvetica, sans-serif
 }
 
-#position {
+.font-weight-bold {
     font-weight:bold;
 }
 
-#name {
+.font-style-italic {
     font-style:italic;
 }
 
