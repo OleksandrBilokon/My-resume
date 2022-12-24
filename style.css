@@ -7,7 +7,7 @@ font-family:Arial, Helvetica, sans-serif
     font-weight:bold;
 }
 
-.font-style-italic {
+.name {
     font-style:italic;
 }
 
@@ -31,4 +31,21 @@ a:hover {
 
 #square {
     list-style-type:square;
+}
+
+.borderbottom {
+    border-bottom: solid #00f  1px ;
+}
+
+#tablecss {
+   background-color: rgb(177, 121, 230);
+}
+
+#photocss {
+    border: solid #00f 2px;
+    padding: 10px;
+}
+
+.titlecss {
+    background-color: orange;
 }
