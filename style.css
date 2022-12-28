@@ -4,7 +4,7 @@ font-family:Arial, Helvetica, sans-serif
 }
 
 .font-weight-bold {
-    font-weight:bold;
+    font-weight:bold; 
 }
 
 .name {
@@ -37,15 +37,39 @@ a:hover {
     border-bottom: solid #00f  1px ;
 }
 
-#tablecss {
+.tablecss {
    background-color: rgb(177, 121, 230);
+   width: 100%;
 }
 
-#photocss {
+.photocss {
+    width: 100px;
+    height: 100px;
     border: solid #00f 2px;
     padding: 10px;
 }
 
 .titlecss {
     background-color: orange;
+}
+
+.headersaphoto {
+    width: 100%;
+}
+
+.headersaphoto > div {
+    float:right;
+}
+
+.headersaphoto > h1 {
+    float:left;
+}
+
+.headersaphoto > p {
+    float:left;
+    clear:left;
+}
+
+.maininfo {
+    clear:both;
 }
