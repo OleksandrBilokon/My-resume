@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: 385px 820px;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
+  gap: 0px 55px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "left right";
+  justify-content: center;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: 385px;
+  grid-template-rows: auto auto auto auto;
+  gap: 40px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "name"
+    "photo"
+    "contact"
+    "languages";
+  grid-area: left;
+  align-content: start;
+  width: 385px;
+  border-right: solid 1px black;
+  background-color: #86A3B4;
+  height: 1500px;
+}
+
+.name {
+  grid-area: name;
+  margin-left: 40px;
+  margin-top: 58px;
+}
+
+.myname {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin: 0px;
+}
+
+.surname {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #1C2E8C;
+}
+
+.photo {
+  grid-area: photo;
+}
+
+.photocss {
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.titles {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #263036;
+  padding-bottom: 15px;
+  width: 85%;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.borderline {
+  border-bottom: 6px solid #1E1E1E;
+}
+
+.nomarked {
+  list-style-type: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.itemoflist {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #263036;
+  margin-bottom: 10px;
+}
+
+.seconditemsoflist {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #263036;
+}
+
+.contact {
+  grid-area: contact;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+.limargin {
+  margin-bottom: 36px;
+}
+
+
+.languages {
+  grid-area: languages;
+  margin-left: 40px;
+}
+
+.lang-limargin {
+  margin-bottom: 15px;
+}
+
+.langlist {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1E1E1E;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: 820px;
+  grid-template-rows: auto auto auto auto;
+  gap: 50px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "summary"
+    "skills"
+    "workexp"
+    "education";
+  grid-area: right;
+  align-content: start;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 820px;
+  height: 1500px;
+}
+
+.righttitles {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1E1E1E;
+  padding-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.summary {
+  grid-area: summary;
+  margin-top: 58px;
+}
+
+.rightitemtxt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #263036;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.textcols {
+  column-width: 100%;
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.skills-list {
+  margin: 0px;
+  padding-left: 25px;
+}
+
+.workexp {
+  grid-area: workexp;
+}
+
+.workexptxt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.dl-margin {
+  margin-bottom: 15px;
+}
+
+
+
+.education {
+  grid-area: education;
+}
