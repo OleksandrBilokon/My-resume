@@ -3,60 +3,60 @@
 
 <head>
     <title>Hire me</title>
+    <link href="./forms.css" rel="stylesheet" type="text/css">
 </head>
 
+
+
 <body>
-    <h1>Hire me</h1>
+    <div class="box">
+        <div class="first">
+            <div>
+                <h1 class="titles">Hire me</h1>
+            </div>
+            <div>
+                <h2 class="titles">Contact information</h2>
+            </div>
+            <div>
+                <table class="tablecontact titles" cellspacing="0" cellpadding="10px">
+                    <tr>
+                        <th class="tablecontact_th">Phone</th>
+                        <td>+380995591389</td>
+                    </tr>
 
-    <h2>Contact information</h2>
-
-    <table border="1" cellspacing="0" cellpadding="10px">
-        <tr>
-            <th>Phone</th>
-            <td>+380995591389</td>
-        </tr>
-
-        <tr>
-            <th>Adress</th>
-            <td>Novomoskovsk city</td>
-        </tr>
-    </table>
-
-    <br />
-
-    <form action="/lesson-6 forms.html" method="get">
-        <fieldset>
-            <legend>Contact form</legend>
-            <label for="email">Contact information</label><br />
-            E-mail<span style="color:red">*</span>:
-            <input id="email" type="email" required name="e-mail" style=position:absolute;left:7%; />
-            <br />
-            <br />
-
-            <label for="Description">Description:</label>
-            <textarea id="Description" name="Description" rows="5" cols="20" style=position:absolute;left:7%;>
-            </textarea>
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <label for="Worktype">Work type:</label>
-            <select id="Worktype" name="Work-type:" style=position:absolute;left:7%;>
-                <option>Full time</option>
-                <option>Remote work</option>
-                <option>Freelance</option>
-            </select>
-            <br />
-            <br />
-
-            <input type="Submit" value="Hire me" />
+                    <tr>
+                        <th class="tablecontact_th bordertop">Adress</th>
+                        <td class="tablecontact_td ">Novomoskovsk city</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 
 
+        <div>
+            <form action="/lesson-6 forms.html" method="get">
+                <fieldset>
+
+
+                    <div><label for="email" class="contactinfo ">Contact information</label></div>
+                    <div class="labeltxt">E-mail<span style="color:#ED0131">*</span></div>
+                    <div><input id="email" type="email" class="email" name="email" placeholder="user@email.com" /></div>
+                    <div class="error">Error!</div>
+                    <div><label class="labeltxt" for="Description">Description:</label></div>
+                    <div><textarea maxlength="200" id="Description" name="Description" class="txtarea"
+                            placeholder="Enter the text..."></textarea></div>
+                    <div><label class="labeltxt" for="Worktype">Work type:</label></div>
+                    <select class="_select" id="Worktype" name="Work-type:">
+                        <option>Full time</option>
+                        <option>Remote work</option>
+                        <option>Freelance</option>
+                    </select>
+        </div>
+        <div><input type="Submit" value="Hire me" class="button" /></div>
         </fieldset>
-    </form>
+        </form>
+    </div>
+    </div>
 </body>
 
 </html>
