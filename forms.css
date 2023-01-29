@@ -1,18 +1,12 @@
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-  margin: auto;
   max-width: 1024px;
 }
 
 .first {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .tablecontact {
@@ -178,3 +172,13 @@
 .margin {
   margin-bottom:5px;
 }
+
+.form_absolute {
+  position:absolute;
+  width:560px;
+  height: 390px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+

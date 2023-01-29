@@ -4,7 +4,6 @@ body {
 
 .container {
   display: grid;
-
   grid-template-columns: 385px 820px;
   grid-template-rows: auto;
   grid-auto-rows: 1fr;
@@ -32,6 +31,27 @@ body {
   border-right: solid 1px black;
   background-color: #86A3B4;
   height: 1500px;
+  position: sticky;
+  top:0;
+  left:0;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: 820px;
+  grid-template-rows: auto auto auto auto;
+  gap: 50px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "summary"
+    "skills"
+    "workexp"
+    "education";
+  grid-area: right;
+  align-content: start;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 820px;
 }
 
 .name {
@@ -143,24 +163,7 @@ body {
   color: #1E1E1E;
 }
 
-.right {
-  display: grid;
-  grid-template-columns: 820px;
-  grid-template-rows: auto auto auto auto;
-  gap: 50px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "summary"
-    "skills"
-    "workexp"
-    "education";
-  grid-area: right;
-  align-content: start;
-  justify-items: stretch;
-  align-items: stretch;
-  width: 820px;
-  height: 1500px;
-}
+
 
 .righttitles {
   font-family: Arial, Helvetica, sans-serif;
