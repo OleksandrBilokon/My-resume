@@ -293,7 +293,7 @@ body {
   }
   
   .photocss:hover {
-    transform: scale(1.8 , 1.8) translateX(85px) translateY(70px);
+    transform: scale(1.8 , 1.8) translateX(85.5px) translateY(70px);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   
