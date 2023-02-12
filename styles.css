@@ -32,11 +32,21 @@ body {
     "languages";
   grid-area: left;
   align-content: start;
+<<<<<<< HEAD
   border-right: solid 1px black;
   background-color: #86A3B4;
   max-width:385px;
   padding-bottom:5em;
   -webkit-animation: leftblock 1s linear;
+=======
+  width: 385px;
+  border-right: solid 1px var(--color-border-center);
+  background-color: var(--color-background-concact);
+  height: 1500px;
+  position: sticky;
+  top:0;
+  left:0;
+>>>>>>> lesson-14
 }
 
 
@@ -69,14 +79,53 @@ body {
   margin-top: 3.625em;
 }
 
+:root  {
+  /* Colors */
+  --color-border-center:#000000;
+  --color-txtandborder-titles:#1E1E1E;
+  --color-background-concact:#86A3B4;
+  --color-text-surname:#1C2E8C;
+  --color-text-name:#FFFFFF;
+  --color-left-titles:#263036;
+  --color-right-description:#263036;
+  --color-background-hirebutton:#55ff71;
+  --color-button-hireme:purple;
+  
+  /* margins */
+  --margin-zero: 0px;
+  --margin-titles-bottom:30px;
+  --margin-lists-bottom:15px;
+  --margin-listitems-bottom:10px;
+  --margin-contactlist-bottom:36px;
+
+  /*paddings */
+  --padding-zero: 0px;
+  --padding-titles-bottom:15px;
+}
+
+
+.main-theme {
+   /* Colors */
+   --color-border-center:#000000;
+   --color-txtandborder-titles:#1E1E1E;
+   --color-background-concact:#86A3B4;
+   --color-text-surname:#1C2E8C;
+   --color-text-name:#FFFFFF;
+   --color-left-titles:#263036;
+   --color-right-description:#263036;
+   --color-background-hirebutton:#55ff71;
+}
+
+
+
 .myname {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 2.5em;
   line-height: 48px;
-  color: #FFFFFF;
-  margin: 0px;
+  color: var(--color-text-name);
+  margin: var(--margin-zero);
 }
 
 .surname {
@@ -85,10 +134,10 @@ body {
   font-weight: 600;
   font-size: 1em;
   line-height: 48px;
-  color: #1C2E8C;
+  color: var(--color-text-surname);
 }
 
-.offerbutton
+
 .photo {
   grid-area: photo;
 }
@@ -104,6 +153,7 @@ body {
   font-weight: 600;
   font-size: 2em;
   line-height: 39px;
+<<<<<<< HEAD
   color: #263036;
   padding-bottom: 1em;
   width: 85%;
@@ -113,6 +163,17 @@ body {
 
 .borderline {
   border-bottom: .1em solid #1E1E1E;
+=======
+  color: var(--color-txtandborder-titles);
+  padding-bottom: var(--padding-titles-bottom);
+  width: 85%;
+  margin-bottom: var(--margin-titles-bottom);
+  margin-top: var(--margin-zero);
+}
+
+.borderline {
+  border-bottom: 6px solid var(--color-txtandborder-titles);
+>>>>>>> lesson-14
 }
 
 .nomarked {
@@ -120,8 +181,8 @@ body {
 }
 
 .list {
-  padding: 0;
-  margin: 0;
+  padding: var(--padding-zero);
+  margin: var(--margin-zero);
 }
 
 .itemoflist {
@@ -130,8 +191,13 @@ body {
   font-weight: 600;
   font-size: 1.5em;
   line-height: 29px;
+<<<<<<< HEAD
   color: #263036;
   margin-bottom: 0.5em;
+=======
+  color: var(--color-left-titles);
+  margin-bottom: var(--margin-listitems-bottom);
+>>>>>>> lesson-14
 }
 
 .seconditemsoflist {
@@ -140,7 +206,7 @@ body {
   font-weight: 600;
   font-size: 1em;
   line-height: 19px;
-  color: #263036;
+  color: var(--color-left-titles);
 }
 
 .contact {
@@ -150,7 +216,11 @@ body {
 }
 
 .limargin {
+<<<<<<< HEAD
   margin-bottom: 2.25em;
+=======
+  margin-bottom: var(--margin-listitems-bottom);
+>>>>>>> lesson-14
 }
 
 
@@ -160,6 +230,7 @@ body {
 }
 
 .lang-limargin {
+<<<<<<< HEAD
   margin-bottom: 1em;
 }
 
@@ -173,15 +244,29 @@ body {
 
 
 
+=======
+  margin-bottom: var(--margin-lists-bottom);
+}
+
+>>>>>>> lesson-14
 .righttitles {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
+<<<<<<< HEAD
   font-size: 2.25em;
   color: #1E1E1E;
   padding-bottom: 0.5em;
   margin-top: 0px;
   margin-bottom: 1.5em;
+=======
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--color-txtandborder-titles);
+  padding-bottom: var(--padding-titles-bottom);
+  margin-top:var(--margin-zero);
+  margin-bottom: var(--margin-titles-bottom);
+>>>>>>> lesson-14
 }
 
 .summary {
@@ -197,7 +282,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-  color: #263036;
+  color: var(--color-right-description);
 }
 
 .skills {
@@ -212,8 +297,13 @@ body {
 }
 
 .skills-list {
+<<<<<<< HEAD
   margin: 0px;
   padding-left: 1,5em;
+=======
+  margin:var(--margin-zero);
+  padding-left: 25px;
+>>>>>>> lesson-14
 }
 
 .workexp {
@@ -221,6 +311,7 @@ body {
   max-width:45rem;
 }
 
+<<<<<<< HEAD
 .workexptxt {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -231,6 +322,12 @@ body {
 
 .dl-margin {
   margin-bottom: 1em;
+=======
+
+
+.dl-margin {
+  margin-bottom: var(--margin-lists-bottom);
+>>>>>>> lesson-14
 }
 
 
@@ -244,11 +341,11 @@ body {
   display: block;
   width: max-content;
   padding: 10px;
-  border: 1px black solid;
   border-radius: 15px;
-  background-color: rgb(85, 255, 113);
+  background-color: var(--color-background-hirebutton);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+<<<<<<< HEAD
   color:#1C2E8C;
 }
 
@@ -340,3 +437,7 @@ body {
 }
   
 
+=======
+  color:var(--color-button-hireme);
+}
+>>>>>>> lesson-14
