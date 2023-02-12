@@ -69,14 +69,14 @@ body {
   
   /* margins */
   --margin-zero: 0px;
-  --margin-titles-bottom:1.8em;
+  --margin-titles-bottom:1em;
   --margin-lists-bottom:1em;
   --margin-listitems-bottom:0.8em;
   --margin-contactlist-bottom:2.25em;
 
   /*paddings */
   --padding-zero: 0px;
-  --padding-titles-bottom:1em;
+  --padding-titles-bottom:.5em;
 }
 
 
@@ -236,6 +236,13 @@ body {
   max-width:45rem;
 }
 
+.workexptxt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1em;
+  color: var(--color-border-center);
+}
 
 
 .dl-margin {
@@ -297,6 +304,24 @@ body {
     padding-right:2em;
     padding-left:2em;
   }
+}
 
-
+@media screen and (min-width:1200px) 
+{ .block-shadow {
+    box-shadow: .3em -.2em 10px rgba(0, 0, 0, 0.321);
+    z-index:2;
+  }
+  
+  .photocss:hover {
+    transform: scale(1.8 , 1.8) translateX(85.5px) translateY(70px);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  
+  .opacity_workexp {
+    opacity: 70%;
+  }
+  
+  .opacity_workexp:hover {
+    opacity:100%;
+  }
 }
