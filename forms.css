@@ -174,24 +174,9 @@
 }
 
 .form_absolute {
-  position: absolute;
+  position:absolute;
   width:560px;
   height: 390px;
   left:calc(50% - 280px);
   top: calc(50% - 190px);
-}
-
-.form_animation {
-  -webkit-animation: form 5s;
-}
-
-@keyframes form {
-  0% {scale:200%;
-    opacity: 0;
-  }
-
-  100% {
-    scale:100%;
-    opacity: 1;
-  }
 }

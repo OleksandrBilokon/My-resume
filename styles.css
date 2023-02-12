@@ -4,24 +4,19 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: .2fr 1fr;
+  grid-template-columns: 385px 820px;
   grid-template-rows: auto;
   grid-auto-rows: 1fr;
   gap: 0px 55px;
   grid-auto-flow: row;
   grid-template-areas:
     "left right";
-  max-width: 1250px;
   justify-content: center;
-  padding-bottom:5em;
-  position:sticky;
-  left:350px;
-
 }
 
 .left {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 385px;
   grid-template-rows: auto auto auto auto;
   gap: 40px 0px;
   grid-auto-flow: row;
@@ -32,13 +27,6 @@ body {
     "languages";
   grid-area: left;
   align-content: start;
-<<<<<<< HEAD
-  border-right: solid 1px black;
-  background-color: #86A3B4;
-  max-width:385px;
-  padding-bottom:5em;
-  -webkit-animation: leftblock 1s linear;
-=======
   width: 385px;
   border-right: solid 1px var(--color-border-center);
   background-color: var(--color-background-concact);
@@ -46,14 +34,11 @@ body {
   position: sticky;
   top:0;
   left:0;
->>>>>>> lesson-14
 }
-
-
 
 .right {
   display: grid;
-  grid-template-columns: 1.5fr;
+  grid-template-columns: 820px;
   grid-template-rows: auto auto auto auto;
   gap: 50px 0px;
   grid-auto-flow: row;
@@ -66,17 +51,13 @@ body {
   align-content: start;
   justify-items: stretch;
   align-items: stretch;
-  max-width:820px;
-  padding-bottom:5em;
-  -webkit-animation: rightblock 1s linear ;
+  width: 820px;
 }
-
-
 
 .name {
   grid-area: name;
-  margin-left: 2.5em;
-  margin-top: 3.625em;
+  margin-left: 40px;
+  margin-top: 58px;
 }
 
 :root  {
@@ -122,7 +103,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 40px;
   line-height: 48px;
   color: var(--color-text-name);
   margin: var(--margin-zero);
@@ -132,7 +113,7 @@ body {
   font-family:Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 40px;
   line-height: 48px;
   color: var(--color-text-surname);
 }
@@ -151,19 +132,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 32px;
   line-height: 39px;
-<<<<<<< HEAD
-  color: #263036;
-  padding-bottom: 1em;
-  width: 85%;
-  margin-bottom: 2em;
-  margin-top: 0px;
-}
-
-.borderline {
-  border-bottom: .1em solid #1E1E1E;
-=======
   color: var(--color-txtandborder-titles);
   padding-bottom: var(--padding-titles-bottom);
   width: 85%;
@@ -173,7 +143,6 @@ body {
 
 .borderline {
   border-bottom: 6px solid var(--color-txtandborder-titles);
->>>>>>> lesson-14
 }
 
 .nomarked {
@@ -189,91 +158,56 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 24px;
   line-height: 29px;
-<<<<<<< HEAD
-  color: #263036;
-  margin-bottom: 0.5em;
-=======
   color: var(--color-left-titles);
   margin-bottom: var(--margin-listitems-bottom);
->>>>>>> lesson-14
 }
 
 .seconditemsoflist {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 19px;
   color: var(--color-left-titles);
 }
 
 .contact {
   grid-area: contact;
-  margin-left: 2.5em;
-  margin-right: 0.6em;
+  margin-left: 40px;
+  margin-right: 10px;
 }
 
 .limargin {
-<<<<<<< HEAD
-  margin-bottom: 2.25em;
-=======
   margin-bottom: var(--margin-listitems-bottom);
->>>>>>> lesson-14
 }
 
 
 .languages {
   grid-area: languages;
-  margin-left: 2.5em;
+  margin-left: 40px;
 }
 
 .lang-limargin {
-<<<<<<< HEAD
-  margin-bottom: 1em;
-}
-
-.langlist {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.25em;
-  color: #1E1E1E;
-}
-
-
-
-=======
   margin-bottom: var(--margin-lists-bottom);
 }
 
->>>>>>> lesson-14
 .righttitles {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
-<<<<<<< HEAD
-  font-size: 2.25em;
-  color: #1E1E1E;
-  padding-bottom: 0.5em;
-  margin-top: 0px;
-  margin-bottom: 1.5em;
-=======
   font-size: 36px;
   line-height: 44px;
   color: var(--color-txtandborder-titles);
   padding-bottom: var(--padding-titles-bottom);
   margin-top:var(--margin-zero);
   margin-bottom: var(--margin-titles-bottom);
->>>>>>> lesson-14
 }
 
 .summary {
   grid-area: summary;
-  margin-top: 3.5em;
-  max-width:45rem;
-  
+  margin-top: 58px;
 }
 
 .rightitemtxt {
@@ -287,7 +221,6 @@ body {
 
 .skills {
   grid-area: skills;
-  max-width:45rem;
 }
 
 .textcols {
@@ -297,44 +230,24 @@ body {
 }
 
 .skills-list {
-<<<<<<< HEAD
-  margin: 0px;
-  padding-left: 1,5em;
-=======
   margin:var(--margin-zero);
   padding-left: 25px;
->>>>>>> lesson-14
 }
 
 .workexp {
   grid-area: workexp;
-  max-width:45rem;
 }
 
-<<<<<<< HEAD
-.workexptxt {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 1em;
-  color: #000000;
-}
-
-.dl-margin {
-  margin-bottom: 1em;
-=======
 
 
 .dl-margin {
   margin-bottom: var(--margin-lists-bottom);
->>>>>>> lesson-14
 }
 
 
 
 .education {
   grid-area: education;
-  max-width:45rem;
 }
 
 .offerbutton {
@@ -345,99 +258,5 @@ body {
   background-color: var(--color-background-hirebutton);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-<<<<<<< HEAD
-  color:#1C2E8C;
-}
-
-
-@media screen and (max-width: 385px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "left"
-    "right"
-    ;
-  }
-
-  .left {
-    border-right:none;
-  }
-  .right {
-    grid-template-columns: 24em;
-    gap:3em 0;
-  }
-
-  .summary {
-    padding-right:2em;
-    padding-left:2em;
-  }
-
-  .skills {
-    padding-right:2em;
-    padding-left:2em;
-  }
-
-  .workexp {
-    padding-right:2em;
-    padding-left:2em;
-  }
-
-  .education {
-    padding-right:2em;
-    padding-left:2em;
-  }
-}
-
-
-@media screen and (min-width:1200px) 
-{ .block-shadow {
-    box-shadow: .3em -.2em 10px rgba(0, 0, 0, 0.321);
-    z-index:2;
-  }
-  
-  .photocss:hover {
-    transform: scale(1.8 , 1.8) translateX(85.5px) translateY(70px);
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    transition-duration: 2s;
-  }
-  
-  .opacity_workexp {
-    opacity: 70%;
-  }
-  
-  .opacity_workexp:hover {
-    opacity:100%;
-    transition-duration: 4s;
-  }
-
-
-  @keyframes leftblock {
-    0%{
-      margin-top: 50vh;
-      opacity:0;
-    }
-    100%{
-      margin-top:0vh;
-      opacity: 1;
-    }
-  }
-
-  @keyframes rightblock {
-
-    0% {
-      margin-top:100vh;
-      opacity:0;
-    }
-    100%{
-      margin-top:0vh;
-      opacity: 1;
-    }
-  }
-}
-  
-
-=======
   color:var(--color-button-hireme);
 }
->>>>>>> lesson-14
