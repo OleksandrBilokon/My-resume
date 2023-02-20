@@ -1,0 +1,239 @@
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1024px;
+}
+
+.first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tablecontact {
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #52575C;
+}
+
+.titles {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 21px;
+  color: #52575C;
+}
+
+.tablecontact_th .tablecontact_td .bordertop {
+  border-right: 1px solid black;
+}
+
+.button {
+  padding: 0.75rem 1rem;
+  background: #0048D9;
+  border-radius: 6px;
+  font-family: "IBM PLEX SANS";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #d4d2d2;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.button :hover {
+  cursor: pointer;
+  background: #002266;
+}
+.button :disabled {
+  cursor: not-allowed;
+  background: #7B61FF;
+}
+
+.labeltxt {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6F7482;
+}
+
+.email .txtarea, ._select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contactinfo {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #52575C;
+}
+
+.email .txtarea, ._select {
+  padding: 0.75rem;
+  background: #F8FAFC;
+  border-radius: 4px;
+  line-height: 1.5rem;
+  border: none;
+}
+
+.txtarea::-webkit-input-placeholder {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B8BCCA;
+}
+
+.txtarea::-moz-placeholder {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B8BCCA;
+}
+
+.txtarea:-ms-input-placeholder {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B8BCCA;
+}
+
+.txtarea::-ms-input-placeholder {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B8BCCA;
+}
+
+.email, .txtarea::placeholder {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B8BCCA;
+}
+
+.email {
+  width: 20rem;
+}
+.email:focus {
+  outline: 1px solid #0048D9;
+}
+.email:invalid {
+  outline-color: red;
+}
+.email:invalid + .error {
+  display: block;
+  color: red;
+}
+
+.error {
+  display: none;
+}
+
+.txtarea {
+  width: 500px;
+  max-width: 1000px;
+  height: 100px;
+  max-height: 300px;
+  outline: none;
+}
+
+._select {
+  min-width: 10rem;
+  background: url(./mdi_arrow_drop_down.svg) no-repeat center right 0.75rem;
+  background-color: #F8FAFC;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #B8BCCA;
+}
+._select:focus {
+  border: none;
+  outline: none;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3B4256;
+}
+
+.margin {
+  margin-bottom: 5px;
+}
+
+.form_absolute {
+  position: absolute;
+  width: 560px;
+  height: 390px;
+  left: calc(50% - 280px);
+  top: calc(50% - 190px);
+}
+
+.form_animation {
+  -webkit-animation: form 5s;
+          animation: form 5s;
+}
+
+@-webkit-keyframes form {
+  0% {
+    scale: 200%;
+    opacity: 0;
+  }
+  100% {
+    scale: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes form {
+  0% {
+    scale: 200%;
+    opacity: 0;
+  }
+  100% {
+    scale: 100%;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=sass_forms.css.map */
